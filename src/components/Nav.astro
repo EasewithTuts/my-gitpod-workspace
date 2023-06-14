@@ -1,0 +1,34 @@
+---
+const { siteName } = Astro.props
+---
+
+<header>
+    <div class="nav">
+    <h1 class="site-title">{siteName}</h1>
+    <a href="https://yt.be">Home</a>
+    <a href="https://yt.be">Blog</a>
+    </div>
+</header>
+
+<style>
+
+    .nav {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-items: end;
+        gap: .5rem;
+        margin : 1.25rem;
+        align-items: center;
+    }
+
+    .site-title {
+        margin-right: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color : #6b7280;
+        font-size: 1rem; /* 16px */
+        line-height: 1.5rem; /* 24px */
+    }
+</style>

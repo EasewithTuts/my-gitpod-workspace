@@ -1,4 +1,5 @@
 ---
+import Nav from "../components/Nav.astro"
 const { title } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -9,6 +10,12 @@ const { title } = Astro.props;
     <title>{ title }</title>
 </head>
 <body>
+    <style>
+        html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+    <Nav siteName="EasewithTuts"/>
     <slot />
 </body>
 </html>
