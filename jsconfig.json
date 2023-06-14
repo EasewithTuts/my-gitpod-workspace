@@ -1,6 +1,10 @@
 {
-    "paths" : {
-        "components/*" : "./src/components/*",
-        "layouyts/*" : "./src/layouts/*"
+    "compilerOptions": {
+
+        "baseUrl" : "./src",
+        "paths" : {
+            "@components/*" : ["./src/components/*"],
+            "@layouts" : ["./src/layouts/*"],
+        }
     }
 }
