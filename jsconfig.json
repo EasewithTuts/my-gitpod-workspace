@@ -1,0 +1,6 @@
+{
+    "paths" : {
+        "components/*" : "./src/components/*",
+        "layouyts/*" : "./src/layouts/*"
+    }
+}
