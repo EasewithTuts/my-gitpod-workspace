@@ -6,18 +6,18 @@ const { postTitle,postLink } = Astro.props
     .post-card {
         display: flex;
         flex-direction: column ;
-        background-color: #d6d8db;
+        background-color: #ffffff;
         justify-content: start;
         width: 45rem;
         border-radius: 0.25rem;
-
+        border : 1px solid black
     }
 
     .read-more {
         text-decoration: none;
-        background-color: #3b82f6;
+        background-color: white;
         width: max-content;
-        border : none;
+        border : 1px solid black;
         padding-left: .5rem;
         padding-right: .5rem;
         margin-bottom: .5rem;
@@ -25,16 +25,13 @@ const { postTitle,postLink } = Astro.props
         margin-right: .5rem;
         border-radius: .5rem;
         font-size: 1rem;
-        font-weight: 800;
-        color: white;
+        font-weight: 500;
+        color: black;
     }
 
-    .center {
-        display: flex;
-        justify-content: center;
-    }
+
 </style>
     <div class="post-card">
-        <h1 style="text-align: start;">{postTitle}</h1>
+        <h1 style="text-align: start; margin-left:0.2rem">{postTitle}</h1>
         <a href={postLink} class="read-more">Read More</a>
     </div>
