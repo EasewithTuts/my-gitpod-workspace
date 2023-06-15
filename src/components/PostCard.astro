@@ -1,0 +1,40 @@
+---
+const { postTitle,postLink } = Astro.props
+---
+
+<style>
+    .post-card {
+        display: flex;
+        flex-direction: column ;
+        background-color: #d6d8db;
+        justify-content: start;
+        width: 45rem;
+        border-radius: 0.25rem;
+
+    }
+
+    .read-more {
+        text-decoration: none;
+        background-color: #3b82f6;
+        width: max-content;
+        border : none;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-bottom: .5rem;
+        margin-left: .25rem;
+        margin-right: .5rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+        font-weight: 800;
+        color: white;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+    <div class="post-card">
+        <h1 style="text-align: start;">{postTitle}</h1>
+        <a href={postLink} class="read-more">Read More</a>
+    </div>
