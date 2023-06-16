@@ -1,9 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import PostCard from "../components/PostCard.astro";
+const posts = await Astro.glob("../pages/posts/*.md")
 ---
 
 <Layout title="Posts">
     <h1>Posts</h1>
-    <PostCard postTitle="Welcome" postLink="https://yt.be" postDate="15 June 2023"/>
+    {posts.map((post) => (
+    <PostCard postTitle={post.frontmatter.title} postLink={post.url} postDate={post.frontmatter.date}/>
+    ))
+    }
 </Layout>

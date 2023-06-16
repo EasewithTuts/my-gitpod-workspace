@@ -1,0 +1,45 @@
+---
+import Nav from "../components/Nav.astro"
+const {frontmatter} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ frontmatter.title }</title>
+    <script src="https://kit.fontawesome.com/e677c14d11.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <style>
+
+        .box {
+            display : flex;
+            justify-content : start;
+            margin-left:15rem;
+        }
+        .box-details {
+            display : flex;
+            flex-direction : column;
+            align-items : start;
+            margin-left: 15rem;
+            margin-bottom : 1rem;
+        }
+
+        html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <Nav siteName="EasewithTuts"/>
+    
+    <div class="box-details">
+        <h1>{frontmatter.title}</h1>
+        <span>{frontmatter.author} · Posted on {frontmatter.date}</span>
+
+    </div>
+    <div class="box">
+        <slot />
+    </div>
+</body>
+</html>
