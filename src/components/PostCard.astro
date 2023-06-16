@@ -1,5 +1,5 @@
 ---
-const { postTitle,postLink } = Astro.props
+const { postTitle,postLink,postDate} = Astro.props
 ---
 
 <style>
@@ -29,9 +29,18 @@ const { postTitle,postLink } = Astro.props
         color: black;
     }
 
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+
 
 </style>
+<div class="center">
     <div class="post-card">
         <h1 style="text-align: start; margin-left:0.2rem">{postTitle}</h1>
+        <h2 style="text-align: start; margin-left:0.2rem;font-size:1rem">{postDate}</h2>
         <a href={postLink} class="read-more">Read More</a>
     </div>
+</div>
