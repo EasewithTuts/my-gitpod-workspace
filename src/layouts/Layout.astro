@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/Nav.astro"
+import Footer from "../components/Footer.astro"
 const { title } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -22,5 +23,6 @@ const { title } = Astro.props;
     </style>
     <Nav siteName="EasewithTuts"/>
     <slot />
+<Footer />
 </body>
 </html>
