@@ -1,5 +1,6 @@
 ---
 const { siteName } = Astro.props
+import ThemeToggler from "../components/ThemeToggler.astro"
 ---
 
 <header>
@@ -8,6 +9,7 @@ const { siteName } = Astro.props
     <a href="/">Home</a>
     <a href="/posts">Blog</a>
     <a style="color : black;font-size:1.5rem" href="https://github.com/Easewithtuts" class="fa-brands fa-github"></a>
+    <ThemeToggler />
     </div>
 </header>
 
