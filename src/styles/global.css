@@ -1,8 +1,16 @@
 html.dark {
-  background-color: #0d0950;
+  background-color: #000;
   color: #fff;
 }
 
 .dark a {
   color: #fff;
+}
+
+.dark .post-card {
+  background-color : #000;
+}
+
+.dark .read-more {
+  background-color: #000;
 }
