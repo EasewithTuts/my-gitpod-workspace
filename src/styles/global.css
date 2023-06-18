@@ -9,8 +9,10 @@ html.dark {
 
 .dark .post-card {
   background-color : #000;
+  border : 1px solid white;
 }
 
 .dark .read-more {
   background-color: #000;
+  border : 1px solid white;
 }
