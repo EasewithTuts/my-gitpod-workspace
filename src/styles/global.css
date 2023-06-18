@@ -29,3 +29,8 @@ html.dark {
     font-size : .75em;
   }
 }
+
+pre {
+  padding: 1rem;
+  border-radius: .25rem;
+}
