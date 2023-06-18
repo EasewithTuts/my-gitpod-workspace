@@ -17,6 +17,13 @@ html.dark {
   border : 1px solid white;
 }
 
+.dark .fa-github {
+  color : white;
+}
+
+.fa-github {
+  color : black;
+}
 @media only screen and (max-width : 600px) {
   .nav {
     font-size : .75em;
