@@ -40,3 +40,6 @@ pre {
   border-radius: .25rem;
 }
 
+.center {
+  margin-left : auto;
+  margin-right: auto;
