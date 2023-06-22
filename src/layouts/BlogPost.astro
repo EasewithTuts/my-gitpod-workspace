@@ -46,6 +46,7 @@ const {frontmatter} = Astro.props;
     <Nav siteName="EasewithTuts"/>
     
     <div class="box-details">
+        <img src={frontmatter.heroImage} />
         <h1>{frontmatter.title}</h1>
         <span>{frontmatter.author} · Posted on {frontmatter.date}</span>
 
