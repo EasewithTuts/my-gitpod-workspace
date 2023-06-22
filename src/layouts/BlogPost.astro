@@ -37,16 +37,24 @@ const {frontmatter} = Astro.props;
            .box-details {
                 margin-left : .5rem;
             }
+            .center {
+                margin-left: 2.5rem;
+            }
         }
 
         html {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        .center {
+            display: flex;
+            justify-content : center;
+        }
     </style>
     <Nav siteName="EasewithTuts"/>
     
     <div class="box-details">
-        <div style="margin-left:2.5rem">
+        <div class='center'>
             <img src={frontmatter.heroImage} width={300} height={200} class="center"/>
         </div>
         <h1>{frontmatter.title}</h1>
