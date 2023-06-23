@@ -5,4 +5,17 @@ import Layout from "../layouts/Layout.astro"
 <Layout title="Home">
 	<h1>Hello, Stranger.</h1>
 	<p>Welcome to my blog</p>
+
+        
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+  </script>
 </Layout>
