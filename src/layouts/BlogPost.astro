@@ -38,8 +38,9 @@ const {frontmatter} = Astro.props;
                 margin-left : .5rem;
             }
 
-            .center {
-                margin-left : .5vw;
+            .center img {
+                width : 50%;
+                height : 50%;
             }
         }
 
@@ -48,12 +49,13 @@ const {frontmatter} = Astro.props;
         }
 
         .center {
-            margin-left : 5vw;
+            display : flex;
+            justify-content: center;
         }
     </style>
     <Nav siteName="EasewithTuts"/>
     <div class='center'>
-        <img src={frontmatter.heroImage} class="center"/>
+        <img src={frontmatter.heroImage}/>
     </div>
     <div class="box-details">
         <h1>{frontmatter.title}</h1>
