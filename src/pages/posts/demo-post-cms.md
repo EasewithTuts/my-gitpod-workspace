@@ -1,8 +1,24 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: Demo post cms
+title: We Initialized a  Decap CMS
 author: "EasewithTuts "
 date: 23 June 2023
-heroImage: "/images/placeholder-hero.jpg"
+heroImage: /images/placeholder-hero.jpg
 ---
-RD﻿ggg
+# We have added [Decap CMS](https://decapcms.org) into our blog.
+
+ ﻿ It is a CMS like Sanity and Strapi,Contentful.
+ ﻿ It is based on Git workflow.
+ ﻿ I have been working on fixings isses
+
+* Dark Mode Toggle
+* H﻿ero Image
+* R﻿esponsiveness etc.
+
+
+
+## Expect New Blog Posts
+
+## Found an typo/issue.
+
+F﻿ix it on [Github](https://github.com/EasewithTuts/my-gitpod-workspace/issues/new)
