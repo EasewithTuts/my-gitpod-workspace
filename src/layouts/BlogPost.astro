@@ -9,8 +9,15 @@ const {frontmatter} = Astro.props;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content="https://easewithtuts.netlify.app/images/placeholder-hero.png" />
+    <meta property="twitter:title" content={frontmatter.title} />
+    <meta property="twitter:description" content={frontmatter.description} />
+    <meta property="twitter:image" content="https://easewithtuts.netlify.app/images/placeholder-hero.png" />
+
     <title>{ frontmatter.title }</title>
-    <script src={import.meta.env.KIT} crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -55,7 +62,7 @@ const {frontmatter} = Astro.props;
     </style>
     <Nav siteName="EasewithTuts"/>
     <div class='center'>
-        <img src={frontmatter.heroImage}/>
+        <img src={frontmatter.heroImage} alt="Hero Image"/>
     </div>
     <div class="box-details">
         <h1>{frontmatter.title}</h1>
@@ -69,3 +76,5 @@ const {frontmatter} = Astro.props;
     
 </body>
 </html>
+
+

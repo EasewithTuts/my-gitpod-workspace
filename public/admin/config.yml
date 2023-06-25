@@ -16,6 +16,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/BlogPost.astro"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author",name: "author",widget: "string"}
+      - {label: "Description", name: "description", widget: "text"} # For SEO
       - {label: "Date", name: "date", widget: "string"}
       - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
